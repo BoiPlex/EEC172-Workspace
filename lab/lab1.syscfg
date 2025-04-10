@@ -1,0 +1,56 @@
+/**
+ * These arguments were used when this file was generated. They will be automatically applied on subsequent loads
+ * via the GUI or CLI. Run CLI with '--help' for additional information on how to override these arguments.
+ * @cliArgs --device "CC3200" --package "Default" --part "Default"
+ * @versions {"tool":"1.15.0+2826"}
+ */
+
+/**
+ * These are the peripherals and settings in this configuration
+ */
+const iGPIO1        = scripting.addPeripheral("GPIO");
+iGPIO1.$name        = "MyGPIO1";
+iGPIO1.GPIO00.$used = false;
+iGPIO1.GPIO01.$used = false;
+iGPIO1.GPIO02.$used = false;
+iGPIO1.GPIO03.$used = false;
+iGPIO1.GPIO04.$used = false;
+iGPIO1.GPIO05.$used = false;
+iGPIO1.GPIO06.$used = false;
+iGPIO1.GPIO07.$used = false;
+iGPIO1.GPIO08.$used = false;
+iGPIO1.GPIO09.io    = "output";
+iGPIO1.GPIO10.io    = "output";
+iGPIO1.GPIO11.io    = "output";
+iGPIO1.GPIO12.$used = false;
+iGPIO1.GPIO14.$used = false;
+iGPIO1.GPIO15.$used = false;
+iGPIO1.GPIO16.$used = false;
+iGPIO1.GPIO17.$used = false;
+iGPIO1.GPIO23.$used = false;
+iGPIO1.GPIO24.$used = false;
+iGPIO1.GPIO29.$used = false;
+iGPIO1.GPIO25.$used = false;
+iGPIO1.GPIO30.$used = false;
+iGPIO1.GPIO31.$used = false;
+iGPIO1.GPIO32.$used = false;
+const iUART1        = scripting.addPeripheral("UART");
+iUART1.$name        = "MyUART1";
+iUART1.RTS.$used    = false;
+iUART1.CTS.$used    = false;
+iUART1.TX.$assign   = "ball.55";
+iUART1.RX.$assign   = "ball.57";
+
+/**
+ * Pinmux solution for unlocked pins/peripherals. This ensures that minor changes to the automatic solver in a future
+ * version of the tool will not impact the pinmux you originally saw.  These lines can be completely deleted in order to
+ * re-solve from scratch.
+ */
+iGPIO1.$suggestSolution        = "GPIO";
+iGPIO1.GPIO09.$suggestSolution = "ball.64";
+iGPIO1.GPIO10.$suggestSolution = "ball.1";
+iGPIO1.GPIO11.$suggestSolution = "ball.2";
+iGPIO1.GPIO13.$suggestSolution = "ball.4";
+iGPIO1.GPIO22.$suggestSolution = "ball.15";
+iGPIO1.GPIO28.$suggestSolution = "ball.18";
+iUART1.$suggestSolution        = "UART0";

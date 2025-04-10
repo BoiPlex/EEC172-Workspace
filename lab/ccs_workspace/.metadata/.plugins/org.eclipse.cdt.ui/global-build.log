@@ -1,0 +1,2390 @@
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../pinmux.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/blinky" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pinmux.d_raw"  "../pinmux.c"
+Finished building: "../pinmux.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/blinky" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio_if.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/blinky" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/blinky" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building target: "blinky.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"blinky.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="blinky_linkInfo.xml" --rom_model -o "blinky.out" "./gpio_if.obj" "./main.obj" "./pinmux.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "blinky.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin blinky.out blinky.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'blinky.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/blinky" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 116: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 118: error #66: expected a ";"
+"../main.c", line 140: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 141: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 141: warning #93-D: identifier-list parameters may only be used in a function definition
+"../main.c", line 141: error #148: declaration is incompatible with "void UtilsDelay(unsigned long)" (declared at line 59 of "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/utils.h")
+"../main.c", line 142: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 142: warning #93-D: identifier-list parameters may only be used in a function definition
+"../main.c", line 142: error #148: declaration is incompatible with "void GPIO_IF_LedOff(char)" (declared at line 102 of "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.h")
+"../main.c", line 143: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 96: warning #179-D: function "BoardInit" was declared but never referenced
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/blinky" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "blinky.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"blinky.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="blinky_linkInfo.xml" --rom_model -o "blinky.out" "./gpio_if.obj" "./main.obj" "./pinmux.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "blinky.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin blinky.out blinky.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'blinky.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'blinky.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'blinky.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'blinky.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'blinky.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/uart_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../pinmux.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/uart_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pinmux.d_raw"  "../pinmux.c"
+Finished building: "../pinmux.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/uart_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building file: "../uart_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/uart_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart_if.d_raw"  "../uart_if.c"
+Finished building: "../uart_if.c"
+ 
+Building target: "uart_demo.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"uart_demo.map" --heap_size=0x800 --stack_size=0x100 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="uart_demo_linkInfo.xml" --rom_model -o "uart_demo.out" "./main.obj" "./pinmux.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "uart_demo.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin uart_demo.out uart_demo.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'uart_demo.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'uart_demo.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../pinmux.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pinmux.d_raw"  "../pinmux.c"
+Finished building: "../pinmux.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio_if.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pinmux.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 74: fatal error #1965: cannot open source file "pinmux.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../pin_mux_config.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pin_mux_config.d_raw"  "../pin_mux_config.c"
+Finished building: "../pin_mux_config.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'uart_demo.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 158: warning #225-D: function "Report" declared implicitly
+"../main.c", line 215: warning #225-D: function "InitTerm" declared implicitly
+"../main.c", line 217: warning #225-D: function "ClearTerm" declared implicitly
+"../main.c", line 218: error #20: identifier "APP_NAME" is undefined
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 79: fatal error #1965: cannot open source file "pinmux.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 134: warning #225-D: function "GPIO_IF_LedOff" declared implicitly
+"../main.c", line 134: error #20: identifier "MCU_ALL_LED_IND" is undefined
+"../main.c", line 142: warning #225-D: function "GPIO_IF_LedOn" declared implicitly
+"../main.c", line 142: error #20: identifier "MCU_RED_LED_GPIO" is undefined
+"../main.c", line 146: error #20: identifier "MCU_ORANGE_LED_GPIO" is undefined
+"../main.c", line 150: error #20: identifier "MCU_GREEN_LED_GPIO" is undefined
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+ 
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+gmake: *** [all] Error 2
+makefile:135: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+ 
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ ClearTerm ./main.obj      
+ InitTerm  ./main.obj      
+ Report    ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab2-pt2.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'lab2-pt2.out' failed
+gmake[1]: *** [lab2-pt2.out] Error 1
+makefile:135: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../uart_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart_if.d_raw"  "../uart_if.c"
+Finished building: "../uart_if.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 235: error #66: expected a ";"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 235: error #66: expected a ";"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 253: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 252: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 252: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 241: error #20: identifier "bool" is undefined
+"../main.c", line 242: error #20: identifier "bool" is undefined
+"../main.c", line 253: error #29: expected an expression
+"../main.c", line 253: error #20: identifier "count" is undefined
+"../main.c", line 256: error #29: expected an expression
+"../main.c", line 256: error #20: identifier "index" is undefined
+"../main.c", line 285: warning #112-D: statement is unreachable
+6 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 254: error #29: expected an expression
+"../main.c", line 254: error #20: identifier "count" is undefined
+"../main.c", line 257: error #29: expected an expression
+"../main.c", line 257: error #20: identifier "index" is undefined
+"../main.c", line 286: warning #112-D: statement is unreachable
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 254: error #29: expected an expression
+"../main.c", line 254: error #20: identifier "count" is undefined
+"../main.c", line 257: error #29: expected an expression
+"../main.c", line 257: error #20: identifier "index" is undefined
+"../main.c", line 286: warning #112-D: statement is unreachable
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 264: error #29: expected an expression
+"../main.c", line 264: error #20: identifier "count" is undefined
+"../main.c", line 267: error #29: expected an expression
+"../main.c", line 267: error #20: identifier "index" is undefined
+"../main.c", line 289: warning #112-D: statement is unreachable
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 264: error #29: expected an expression
+"../main.c", line 264: error #20: identifier "count" is undefined
+"../main.c", line 267: error #29: expected an expression
+"../main.c", line 267: error #20: identifier "index" is undefined
+"../main.c", line 289: warning #112-D: statement is unreachable
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 264: error #29: expected an expression
+"../main.c", line 264: error #20: identifier "count" is undefined
+"../main.c", line 267: error #29: expected an expression
+"../main.c", line 267: error #20: identifier "index" is undefined
+"../main.c", line 289: warning #112-D: statement is unreachable
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 262: error #29: expected an expression
+"../main.c", line 262: error #20: identifier "index" is undefined
+"../main.c", line 293: warning #112-D: statement is unreachable
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 295: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 295: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 293: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 293: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 253: error #141: too many arguments in function call
+"../main.c", line 294: warning #112-D: statement is unreachable
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 296: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 296: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 296: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 296: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 296: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 296: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 294: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 299: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 301: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 302: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 245: warning #262-D: explicit type is missing ("int" assumed)
+"../main.c", line 306: warning #112-D: statement is unreachable
+"../main.c", line 245: warning #179-D: variable "COUNT_DELAY" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 245: warning #262-D: explicit type is missing ("int" assumed)
+"../main.c", line 307: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 307: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 306: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 306: warning #112-D: statement is unreachable
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 306: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+"../main.c", line 245: warning #179-D: variable "COUNT_DELAY" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 306: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+"../main.c", line 245: warning #179-D: variable "COUNT_DELAY" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../pin_mux_config.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pin_mux_config.d_raw"  "../pin_mux_config.c"
+Finished building: "../pin_mux_config.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 308: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+"../main.c", line 245: warning #179-D: variable "COUNT_DELAY" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 306: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+"../main.c", line 245: warning #179-D: variable "COUNT_DELAY" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 304: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'lab2-pt2.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio_if.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 304: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+Finished building: "../main.c"
+ 
+Building file: "../pin_mux_config.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pin_mux_config.d_raw"  "../pin_mux_config.c"
+Finished building: "../pin_mux_config.c"
+ 
+Building file: "../uart_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart_if.d_raw"  "../uart_if.c"
+Finished building: "../uart_if.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../pin_mux_config.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pin_mux_config.d_raw"  "../pin_mux_config.c"
+Finished building: "../pin_mux_config.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 304: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+Finished building: "../main.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio_if.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building file: "../uart_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart_if.d_raw"  "../uart_if.c"
+Finished building: "../uart_if.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project spi_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../pinmux.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/spi_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pinmux.d_raw"  "../pinmux.c"
+Finished building: "../pinmux.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/spi_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/spi_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building file: "../uart_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/spi_demo" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart_if.d_raw"  "../uart_if.c"
+Finished building: "../uart_if.c"
+ 
+Building target: "spi_demo.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"spi_demo.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="spi_demo_linkInfo.xml" --rom_model -o "spi_demo.out" "./main.obj" "./pinmux.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "spi_demo.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin spi_demo.out spi_demo.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project spi_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'spi_demo.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project spi_demo ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'spi_demo.out' is up to date.
+
+**** Build Finished ****

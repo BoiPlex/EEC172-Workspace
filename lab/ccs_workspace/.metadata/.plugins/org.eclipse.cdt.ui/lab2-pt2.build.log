@@ -1,0 +1,43 @@
+
+**** Build of configuration Debug for project lab2-pt2 ****
+
+"C:\\TI\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../pin_mux_config.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="pin_mux_config.d_raw"  "../pin_mux_config.c"
+Finished building: "../pin_mux_config.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 304: warning #112-D: statement is unreachable
+"../main.c", line 242: warning #552-D: variable "isReadySW2" was set but never used
+"../main.c", line 243: warning #552-D: variable "isReadySW3" was set but never used
+Finished building: "../main.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio_if.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/gpio_if.c"
+ 
+Building file: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="startup_ccs.d_raw"  "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+Finished building: "C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/startup_ccs.c"
+ 
+Building file: "../uart_if.c"
+Invoking: Arm Compiler
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --include_path="C:/Users/endpl/OneDrive/Desktop/UCD_Classes/EEC172/lab/ccs_workspace/lab2-pt2" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/inc/" --include_path="C:/TI/CC3200SDK_1.5.0/cc3200-sdk/example/common/" --include_path="C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart_if.d_raw"  "../uart_if.c"
+Finished building: "../uart_if.c"
+ 
+Building target: "lab2-pt2.out"
+Invoking: Arm Linker
+"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=none -me -Ooff --define=ccs --define=cc3200 --define=NON_NETWORK -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab2-pt2.map" --heap_size=0x800 --stack_size=0x800 -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab2-pt2_linkInfo.xml" --rom_model -o "lab2-pt2.out" "./gpio_if.obj" "./main.obj" "./pin_mux_config.obj" "./startup_ccs.obj" "./uart_if.obj" "../cc3200v1p32.cmd"  -l"C:/TI/CC3200SDK_1.5.0/cc3200-sdk/driverlib/ccs/Release/driverlib.a" -llibc.a 
+<Linking>
+Finished building target: "lab2-pt2.out"
+ 
+C:/TI/ccs1250/ccs/utils/tiobj2bin/tiobj2bin lab2-pt2.out lab2-pt2.bin C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armofd C:/TI/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armhex C:/TI/ccs1250/ccs/utils/tiobj2bin/mkhex4bin
+ 
+
+**** Build Finished ****

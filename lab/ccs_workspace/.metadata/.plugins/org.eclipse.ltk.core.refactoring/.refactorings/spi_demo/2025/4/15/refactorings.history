@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;spi_demo/pinmux.c&apos; to &apos;pinmux_old.c&apos;" description="Rename resource &apos;pinmux.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pinmux.c" name="pinmux_old.c" stamp="1744306225615" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;spi_demo/pin_mux_config.c&apos; to &apos;pinmux.c&apos;" description="Rename resource &apos;pin_mux_config.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pin_mux_config.c" name="pinmux.c" stamp="1744306239056" updateReferences="true"/>
+</session>
